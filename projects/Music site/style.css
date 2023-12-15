@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  background: #f8f2d6;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.icon {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  position: relative;
+    left: 90px;
+}
+
+.icon:hover {
+  color: white;
+}
+
+#notifications, #latest-music {
+  padding: 20px;
+}
+
+.content {
+  display: none;
+}
+
+.music-item img {
+  width: 100px;
+  height: 100px;
+}
+
+.music-item audio {
+  width: 100%;
+}
+
+.wall {
+  height: 60vh;
+  width: 100vw;
+
+}
+
+h1 {
+  position: relative;
+  right: 150px;
+  color: white;
+  font-size: 1em;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px;
+}
+
+#search {
+  padding: 5px;
+  width: 250px;
+  
+}
+
+p {
+  background: rgba(0, 56, 94, 0.493);
+  color: white;
+  padding: 10px;
+}
+
+#notifications {
+  text-align: center;
+}
+
+/* Your existing styles... */
+
+/* Additional styling for the audio player */
+.music-item audio {
+  position: relative;
+  left: 10px;
+  bottom: 20px;
+  flex-grow: 1;
+  width: 100%;
+  height: 70px; /* Adjust the height as needed */
+}
+
+/* Additional styling for the download button */
+.music-item .download-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  
+}
+
+.music-item .download-button:hover {
+  background-color: #45a049;
+}
+
+span {
+  color: rgb(65, 14, 2);
+  background: rgba(3, 39, 238, 0.281);
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.wall {
+  height: 50vh;
+  width: 100vw;
+
+}
+
+.logo {
+  width: 60px;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+  right: 200px;
+}
+
+@media (max-width: 768px) {
+  header .icon {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  
+
+  
+  .icon {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 24px;
+  color: grey;
+}
+
+  /* Adjustments for responsiveness */
+  .music-item {
+    flex-wrap: wrap;
+  }
+
+  .music-item img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .music-item p {
+    flex-grow: 1;
+    margin: 10px 0;
+  }
+}
+
+.home-p {
+  text-align: center;
+  background: rgba(0, 4, 255, 0.644);
+}
+
+.contact {
+  text-align: center;
+  background: #000000;
+}
+
+.follow {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #1b5ab965;
+}
+

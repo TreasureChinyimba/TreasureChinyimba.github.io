@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Se7enth Dimension</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="coverPhotos/logo.png" alt="logo" class="logo" onclick="home()">
+      
+      
+      <input type="text" id="search" oninput="searchMusic()" placeholder="Search music...">
+      <button onclick="showLatestMusic()">Search</button>
+  
+      <div id="music-icon" class="icon" onclick="showLatestMusic()">🎵 music</div>
+      <div id="notifications-icon" class="icon" onclick="showNotifications()">🔔 Notifications</div>
+      <div id="top-ten-icon" class="icon" onclick="showTopTen()">🔝 Top Ten</div>
+    </header>
+
+    <div id='home'>
+      <img src="coverPhotos/wall.jpg" alt="Wallpaper" class="wall">
+      <h2>Latest Tracks.</h2>
+      
+
+    <div class="music-item">
+      <p>San Kay - Bad Energy ft Nikar Slizzy & Jahlaw Payet</p>
+      <img src="coverPhotos/cover.png" class="img" alt="Music Cover Photo">
+      <audio controls title="San Kay - Bad Energy ft Nikar Slizzy & Jahlaw Payet">
+        <source src="audios/San Kay - Bad Energy (Ft Nikar Slizzy & Jahlaw Payet) (Producerd By MAS Theproducer).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <span>4k</span>
+      <button onclick="voteSong('Song Title ')">vote</button>
+      <a href="audios/San Kay - Bad Energy (Ft Nikar Slizzy & Jahlaw Payet) (Producerd By MAS Theproducer).mp3" download="San Kay - Bad Energy ft Nikar Slizzy & Jahlaw Payet" class="download-button">Download</a>
+    </div>
+
+      
+    <div class="music-item">
+      <p>Kinz World - Wilalila</p>
+      <img src="coverPhotos/cover.png" class="img" alt="Music Cover Photo">
+      <audio controls title="Kinz World - Wilalila">
+        <source src="audios/Kinz World - Wilalila (Prod. By MAS Theproducer).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <span>4k</span>
+      <button onclick="voteSong('Song Title ')">vote</button>
+      <a href="audios/Kinz World - Wilalila (Prod. By MAS Theproducer).mp3" download="Kinz World - Wilalila" class="download-button">Download</a>
+    </div>
+
+      <p class="contact">Contact us on:</p>
+      <div class="follow">
+        <p>Facebook: Se7enth Dimension</p>
+        <p>Instagram: Se7enth Dimension</p>
+        <p>Whatsapp: +260772150004</p>
+      </div>
+
+    </div>
+  
+    <div id="notifications" class="content hidden">
+      <h2>Se7enth Dimension</h2>
+      <p>Rick Bley and Boom were spotted working on a new track together.</p>
+      <p>Kinz World has been teasing a new song about Friendship.</p>
+      <p>Evan B has been reported Recording new Tracks with different artist, maybe we might expect an album or an Ep from him.</p>
+      <p>Mas Theproducer has been spotted working on new song, we might expect something new from him.</p>
+      <p>Zenith Max has been reported recording his own stuff soon to drop.</p>
+      <p>We are expected to hear a new song from Sammy Flaz in two months time.</p>
+      <p>Emin Zm is on a tour with Gospel Artist Pompi, could this be the start to a new gospel era?.</p>
+      
+    </div>
+  
+    <div id="latest-music" class="content hidden">
+      <h2>Latest Music</h2>
+  
+      <div class="music-item">
+        <p>Cez - I know you</p>
+        <img src="coverPhotos/cover.png" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Cez - I know you">
+          <source src="audios/Cez - I Know You Kno Bust  A Lung.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>1.5k</span>
+        <button onclick="playAudio('audio-CezIKnowYou')">Play</button>
+        <a href="audios/Cez - I Know You Kno Bust  A Lung.mp3" download="Cez - I know you" class="download-button">Download</a>
+      </div>
+      
+      <div class="music-item">
+        <p>Michi - Free Mind ft Rick Bley</p>
+        <img src="coverPhotos/cover.png" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Michi - Free Mind ft Rick Bley">
+          <source src="audios/Michi - Free Mind (Ft Rick Bley) (Prod. By MAS Theproducer).mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>1k</span>
+        <button onclick="playAudio('audio-MichiFreeMind')">Play</button>
+        <a href="audios/Michi - Free Mind (Ft Rick Bley) (Prod. By MAS Theproducer).mp3" download="Michi - Free Mind ft Rick Bley" class="download-button">Download</a>
+      </div>
+      
+      
+      <div class="music-item">
+        <p>Mas Theproducer - Little Loud  ft Mj</p>
+        <img src="coverPhotos/MAS.jpg" alt="Music Cover Photo">
+        <audio controls title="Mas Theproducer - Little Loud">
+          <source src="audios/little loud.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>3k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/little loud.mp3" download="Mas Theproducer - Little Loud" class="download-button">Download</a>
+      </div>
+  
+      <div class="music-item">
+        <p>Kinz World - Wilalila</p>
+        <img src="coverPhotos/cover.png" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Kinz World - Wilalila">
+          <source src="audios/Kinz World - Wilalila (Prod. By MAS Theproducer).mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>4k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/Kinz World - Wilalila (Prod. By MAS Theproducer).mp3" download="Kinz World - Wilalila" class="download-button">Download</a>
+      </div>
+  
+      <div class="music-item">
+        <p>Mas Theproducer - Dear Sunshine ft Mj</p>
+        <img src="coverPhotos/MAS.jpg" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Mas Theproducer - Dear Sunshine">
+          <source src="audios/Dear sunshine.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>1k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/Dear sunshine.mp3" download="Ms Theproducer - Dear Sunshine" class="download-button">Download</a>
+      </div>
+  
+      <div class="music-item">
+        <p>Evan B - Attention ft Treasure Arthur</p>
+        <img src="coverPhotos/EVAN.jpg" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Evan B - Attention ft Treasure Arthur">
+          <source src="audios/Attention (Feat Treasure Arthur) (Prod. BY MAS).mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>3k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/Attention (Feat Treasure Arthur) (Prod. BY MAS).mp3" download="Evan B - Attention ft Treasure Arthur" class="download-button">Download</a>
+      </div>
+  
+      <div class="music-item">
+        <p>San Kay - Bad Energy ft Nikar Slizzy & Jahlaw Payet</p>
+        <img src="coverPhotos/cover.png" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="San Kay - Bad Energy ft Nikar Slizzy & Jahlaw Payet">
+          <source src="audios/San Kay - Bad Energy (Ft Nikar Slizzy & Jahlaw Payet) (Producerd By MAS Theproducer).mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>4k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/San Kay - Bad Energy (Ft Nikar Slizzy & Jahlaw Payet) (Producerd By MAS Theproducer).mp3" download="San Kay - Bad Energy ft Nikar Slizzy & Jahlaw Payet" class="download-button">Download</a>
+      </div>
+  
+      <div class="music-item">
+        <p>Mas Theproducer - D.N.A ft Dee Dexta, Xpectre and Xpectre</p>
+        <img src="coverPhotos/MAS.jpg" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Mas Theproducer - D.N.A">
+          <source src="audios/D.N.A.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>3k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/D.N.A.mp3" download="Mas Theproducer - D.N.A" class="download-button">Download</a>
+      </div>
+
+      <div class="music-item">
+        <p>Mas Theproducer - Dreamer ft Dexta</p>
+        <img src="coverPhotos/MAS.jpg" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Mas Theproducer - Dreamer">
+          <source src="audios/Dreamer.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>2k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/Dreamer" download="Mas Theproducer - Dreamer" class="download-button">Download</a>
+      </div>
+  
+      <div class="music-item">
+        <p>Young Blow - Xaven ft J Mafia</p>
+        <img src="coverPhotos/cover.png" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Young Blow - Xaven ft J Mafia">
+          <source src="audios/Yung Blow - Xaven (Feat. J Mafia) (Prod By MAS Theproducer).mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>1k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/Yung Blow - Xaven (Feat. J Mafia) (Prod By MAS Theproducer).mp3" download="Young Blow - Xaven ft J Mafia" class="download-button">Download</a>
+      </div>
+  
+      <div class="music-item">
+        <p>Zenith Max - Run To You ft MJ</p>
+        <img src="coverPhotos/cover.png" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Zenith Max - Run To You ft MJ">
+          <source src="audios/Zenith Max - Run To You (Feat. MJ) (Prod. By MAS).mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>2k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/Zenith Max - Run To You (Feat. MJ) (Prod. By MAS).mp3" download="Zenith Max - Run To You ft MJ" class="download-button">Download</a>
+      </div>
+
+      <div class="music-item">
+        <p>Mas Theproducer - Watch the ft Jack Dido</p>
+        <img src="coverPhotos/MAS.jpg" class="img" alt="Music Cover Photo">
+        <audio id="audioId" controls title="Mas Theproducer - Watch the tempo">
+          <source src="audios/Watch the tempo.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <span>2k</span>
+        <button onclick="voteSong('Song Title ')">vote</button>
+        <a href="audios/Watch the tempo.mp3" download="Mas Theproducer - Watch the tempo" class="download-button">Download</a>
+      </div>
+  
+    </div>
+  
+    </div>
+  
+  
+  
+  
+    <div id="top-ten" class="content hidden">
+      <h2>Se7enth Dimension<br>Top 10</h2>
+      <ol>
+        <li class="top10">
+          <p>Kinz World - Wilalila</p>
+        </li>
+  
+        <li>
+          <p>San Kay - Bad Energy ft Nikar Slizzy & Jahlaw Payet</p>
+        </li>
+  
+        <li>
+          <p>Mas Theproducer - D.N.A ft Dexta, Xpecter & Dimix</p>
+        </li>
+  
+        <li>
+          <p>Evan B - Attention ft Treasure Arthur</p>
+        </li>
+  
+        <li>
+          <p>Mas Theproducer - Watch The tempo ft Jack Dido</p>
+        </li>
+
+
+        <li>
+          <p>Zenith Max - Run to you ft MJ</p>
+        </li>
+
+        <li>
+          <p>Mas Theproducer - Dreamer ft Dexta</p>
+        </li>
+
+        <li>
+          <p>Cez - I know you</p>
+        </li>
+
+        <li>
+          <p>Michi Free Mind ft Rick Bley</p>
+        </li>
+
+        <li>
+          <p>Young Blow - Xaven ft J Mafia</p>
+        </li>
+      </ol>
+    </div>
+  
+  </div>
+  
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>
