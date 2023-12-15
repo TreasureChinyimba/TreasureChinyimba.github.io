@@ -185,12 +185,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+    background: #3498db;
   }
   
   #projects h2 {
     width: 100%; /* Make the title take the full width */
     margin-bottom: 30px;
-    color: #333;
+    color: #ffffff;
   }
   
   .project {
@@ -198,9 +199,15 @@ body {
     margin: 10px;
     text-align: center;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #f5f5f523;
+    border: 1px solid rgba(255, 255, 255, 0.192);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    transition: 0.2s;
+  }
+
+  .project:hover {
+    border: 1px solid rgba(255, 255, 255, 0.479);
   }
   
   .project img {
@@ -210,17 +217,17 @@ body {
   }
   
   .project h3 {
-    color: #333;
+    color: #ffffff;
   }
   
   .project p {
-    color: #666;
+    color: #e0e0e0;
   }
   
   .project a {
     display: block;
     margin-top: 10px;
-    color: #3498db;
+    color: #354d5e;
     transition: 0.3s;
     text-decoration: none;
     border: 1px solid #3498db;
@@ -254,7 +261,7 @@ body {
   
   /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -272,4 +279,12 @@ footer {
   footer i {
     margin-right: 5px;
   }
+
+  i {
+    transition: 0.2s;
+    cursor: pointer;
+  }
   
+  i:hover {
+    color: #3498db;
+  }
