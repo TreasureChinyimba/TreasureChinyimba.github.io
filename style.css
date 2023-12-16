@@ -240,6 +240,12 @@ body {
   }
    
 
+  @media only screen and (max-width: 600px) {
+    .project {
+      width: 100%; /* Set width to 100% for 1:1 rows on small screens */
+    }
+  }
+
   /* About Section */
 #about {
     text-align: center;
